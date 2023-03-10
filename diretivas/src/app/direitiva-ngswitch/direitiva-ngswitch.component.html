@@ -7,7 +7,18 @@
 </nav>
 
 <div class="container" [ngSwitch]="aba">
+  <template [ngSwitchCase]="'mapa'">
+    <p>Modo Mapa ativado</p>
+  </template>
+  <template [ngSwitchCase]="'lista'">
+    <p>Modo Lista ativado</p>
+  </template>
+  <template [ngSwitchCase]="'home'" ngSwitchDefault>
+    <p>Modo Home ativado</p>
+  </template>
   <p *ngSwitchCase="'mapa'">Modo mapa ativado</p>
   <p *ngSwitchCase="'lista'">Modo lista ativado</p>
   <p *ngSwitchDefault>Modo home ativado</p>
 </div>
+
+<h5>Removendo o * e usando template</h5>
