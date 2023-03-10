@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./teste.component.scss']
 })
 export class TesteComponent {
-
+  minhaVariavel: string;
 }
