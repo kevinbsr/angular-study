@@ -14,5 +14,4 @@ export class FiltroArrayPipe implements PipeTransform {
       (v:any) => v.toLocaleLowerCase().includes(filtro)
     )
   }
-
 }

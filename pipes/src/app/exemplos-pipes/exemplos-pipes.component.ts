@@ -23,4 +23,19 @@ export class ExemplosPipesComponent {
     this.books.push(valor)
     console.log(this.books);
   }
+
+  obterCursos(){
+    if (this.books.length === 0 || this.filtro === null || this.filtro.trim() === ''){
+      return this.books
+    }
+
+    return this.books.filter((v) => {
+      if (v.toLowerCase().indexOf(this.filtro.toLowerCase()) >= 0){
+        return true
+      } else {
+        return false
+      }
+    })
+  }
+
 }
