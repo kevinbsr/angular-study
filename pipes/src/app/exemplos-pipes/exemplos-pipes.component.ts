@@ -14,4 +14,13 @@ export class ExemplosPipesComponent {
     releaseDate: new Date(2016, 5, 23),
     url: 'http://a.co/glqjpRP'
   }
+
+  books: string[] = ['Java', 'Angular']
+
+  filtro = ''
+
+  addCurso(valor: any){
+    this.books.push(valor)
+    console.log(this.books);
+  }
 }
