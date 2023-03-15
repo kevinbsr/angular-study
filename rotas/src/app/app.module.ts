@@ -9,6 +9,8 @@ import { CursosComponent } from './cursos/cursos.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { routing } from './app.routing';
 
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,9 +22,12 @@ import { routing } from './app.routing';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    routing
+    routing,
+    MatSlideToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
