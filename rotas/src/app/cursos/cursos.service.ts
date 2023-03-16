@@ -9,7 +9,10 @@ export class CursosService {
     return [
       {id: 1, nome: 'Angular'},
       {id: 2, nome: 'Java'},
-      {id: 3, nome: 'JavaScript'}
+      {id: 3, nome: 'JavaScript'},
+      {id: 4, nome: 'Ionic'},
+      {id: 5, nome: 'TypeScript'},
+      {id: 6, nome: 'Bootstrap'}
     ]
   }
 

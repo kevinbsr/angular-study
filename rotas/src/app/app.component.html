@@ -10,7 +10,7 @@
           <a class="nav-link link-light" routerLinkActive="text-decoration-underline" routerLink="/login">Login</a>
         </li>
         <li class="nav-item" routerLinkActive="active">
-          <a class="nav-link link-light" routerLinkActive="text-decoration-underline" routerLink="/cursos">Courses</a>
+          <a class="nav-link link-light" routerLinkActive="text-decoration-underline" routerLink="/cursos" [queryParams]="{pagina:1}">Courses</a>
         </li>
         <li class="nav-item" routerLinkActive="active">
           <a class="nav-link link-light" routerLinkActive="text-decoration-underline" [routerLink]="['curso', idCurso.value]">Course with id</a>

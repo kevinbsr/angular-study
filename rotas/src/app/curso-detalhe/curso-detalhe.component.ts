@@ -24,7 +24,6 @@ export class CursoDetalheComponent {
     ngOnInit(){
       this.inscricao = this.route.params.subscribe((params: any) => {
         this.id = params['id'];
-
         this.curso = this.cursosService.getCurso(this.id)
 
         if(this.curso == null){
