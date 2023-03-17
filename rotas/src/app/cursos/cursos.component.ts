@@ -39,7 +39,6 @@ export class CursosComponent {
     this.router.navigate(['/cursos'], {queryParams: {'pagina': ++this.pagina}})
   }
   paginaAnterior(){
-    // this.pagina++
     this.router.navigate(['/cursos'], {queryParams: {'pagina': --this.pagina}})
   }
 }
