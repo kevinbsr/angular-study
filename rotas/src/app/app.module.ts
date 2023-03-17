@@ -12,6 +12,8 @@ import { LoginComponent } from './login/login.component';
 import { CursoNaoEncontradoComponent } from './cursos/curso-nao-encontrado/curso-nao-encontrado.component';
 import { FormsModule } from '@angular/forms';
 import { CursosModule } from './cursos/cursos.module';
+import { AlunosComponent } from './alunos/alunos.component';
+import { AlunosModule } from './alunos/alunos.module';
 
 @NgModule({
   declarations: [
@@ -20,11 +22,13 @@ import { CursosModule } from './cursos/cursos.module';
     LoginComponent,
     /* CursosComponent,
     CursoDetalheComponent, */
-    CursoNaoEncontradoComponent
+    // CursoNaoEncontradoComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    CursosModule,
+    AlunosModule,
     AppRoutingModule
     // routing,
   ],
